@@ -17,6 +17,9 @@ html {
 a{
     text-decoration: none;
 }
+button:hover a{
+    color: white;
+}
 /* general classes  */
 .container {
     width: 84%;
