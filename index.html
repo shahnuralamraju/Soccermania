@@ -13,7 +13,7 @@
 <body>
     <!-- hero section  -->
 
-    <section>
+    <section id="hero">
         <div class="container hero">
             <div class="hero-text">
                 <h1 class="primary-text">The Greatest show on the earth</h1>
@@ -25,10 +25,12 @@
                 <p class="secondary-text secondary-text_tm">
                     See the match card easily and enjoy the game.
                 </p>
-                <button class="primary-btn hero-btn">
-                    Watch Live
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
+                <a href="#match">
+                    <button class="primary-btn hero-btn">
+                        Watch Live
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </a>
             </div>
             <div class="hero-banner">
                 <img src="./images/Banner Image.png" alt="">
@@ -41,12 +43,16 @@
     <!-- match card section  -->
 
 
-    <section class="match-section">
+    <section id="match" class="match-section">
         <div class="container match-container">
             <div class="tabs">
-                <button class="primary-btn">Upcoming Match</button>
-                <button class="primary-btn">All Group</button>
-                <button class="primary-btn">Blog</button>
+                <button class="primary-btn primary-second">
+                    <a href="./match.html">
+                        Upcoming Match
+                    </a>
+                </button>
+                <button class="primary-btn primary-second">All Group</button>
+                <button class="primary-btn blog-btn">Blog</button>
             </div>
             <div class="card-container">
                 <div class="card">
@@ -206,23 +212,33 @@
     <!-- ..................... -->
 
     <!-- footer section  -->
-    <section class="footer">
-        <div class="footer-container container">
-            <h1>Soccer Mania</h1>
-            <p>Copyright 2022 all right reserved Soccermania</p>
-            <hr class="line">
-            <div class="brand-container">
-                <p>Contact Us</p>
-                <p>Terms of Service</p>
-                <p>Privacy Policy</p>
-                <p>Privacy setting</p>
-                <p>Soccer App</p>
-                <p>Soccer Live</p>
-            </div>
-            <div class="social-container">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-behance"></i>
+    <section>
+        <div class="footer">
+            <div class="footer-container container">
+                <a href="#hero">
+                    <h1 class="footer-primary_text">Soccer Mania</h1>
+                </a>
+                <p class="footer-secondary_text">Copyright ©2022 all right reserved Soccermania</p>
+                <hr class="line">
+                <div class="brand-container">
+                    <span>Contact Us</span>
+                    <span>Terms of Service</span>
+                    <span>Privacy Policy</span>
+                    <span>Privacy setting</span>
+                    <span>Soccer App</span>
+                    <span>Soccer Live</span>
+                </div>
+                <div class="social-container">
+                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="http://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="http://www.behance.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
