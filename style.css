@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* general classes  */
+.container {
+    width: 84%;
+    margin: 0 auto;
+}
+
+
+.primary-btn {
+    /* background: rgba(222, 7, 75, 0.793); */
+    /* background: rgba(18, 22, 223, 0.793); */
+    background: linear-gradient(90deg, rgba(63,89,251,1) 0%, rgba(252,70,107,1) 100%);
+
+    color: white;
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 0px 0.8em;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+/* ..................  */
+
+/* classes for hero section  */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    background-color: rgb(8, 2, 33);
+    margin-top: 3em;
+    color: white;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.hero-text {
+    width: 50%;
+    padding: 0 5em;
+}
+
+.hero-banner {
+    width: 50%;
+}
+
+.hero-banner>img {
+    width: 84%;
+    padding-top: 8%;
+}
+
+.primary-text {
+    font-size: 4em;
+    line-height: 1.1em;
+}
+
+.secondary-text {
+    margin: 1.5em 0;
+}
+
+.secondary-text_tm {
+    display: none;
+}
+
+/* ................ */
+
+
+/* match container classes  */
+.match-section {
+    margin: 6em 0;
+}
+
+.match-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs{
+    width: 23.5%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5em 0;
+    height: 312px;
+    border-radius: 8px;
+    background-color: rgb(8, 2, 33);
+}
+.tabs > button{
+    width: 80%;
+}
+.primary-btn:nth-child(1), .primary-btn:nth-child(2){
+    background: white;
+    color: #161616;
+    border: 1px solid #161616;
+}
+.card-container {
+    width: 74.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 31.6%;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+}
+
+.card-image {
+    width: 100%;
+    height: 175px;
+}
+
+.card-image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-text_container {
+    margin-top: 0;
+    padding: 1em 0 1em 1em;
+    border-radius: 0 0 8px 8px;
+    border: 1.5px solid rgba(215, 210, 210, 0.532);
+
+}
+
+.card-btn {
+    padding: 5px 20px;
+    background: none;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color:rgba(22, 22, 22, 0.7);
+}
+
+.card-primary_text {
+    padding: 8px 6px 16px 0;
+    font-size: 18px;
+    color: rgba(22, 22, 22, 0.8);
+}
+
+.card-secondary_text {
+    margin-top: 5px;
+    color: rgba(22, 22, 22, 0.7);
+}
+.tablet{
+    display: none;
+    margin: 2em auto;
+}
+.fa-clock,
+.fa-message {
+    margin-right: 8px;
+}
+
+.hour {
+    margin-right: 30px;
+}
+
+/* ...................... */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    background: #161616;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    height: 200px; 
+    color: white;
+}
+.brand-container{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+.line{
+    margin-top: 1em;
+    width: 100%;
+}
+/* media query  */
+
+/* for tablet  */
+@media (min-width: 767px) and (max-width: 991.98px) {
+    .container {
+        width: 88%;
+    }
+
+    /* for hero section responsiveness */
+
+    .hero {
+        height: 400px;
+    }
+    .match-section {
+        margin: 3em 0;
+    }
+    .hero-text {
+        padding: 0 1em 0 4em;
+    }
+
+    .primary-text {
+        font-size: 2.5em;
+    }
+
+    .secondary-text {
+        display: none;
+    }
+
+    .secondary-text_tm {
+        display: block;
+    }
+
+    .hero-banner>img {
+        width: 100%;
+        padding-top: 15%;
+        padding-right: 4%;
+    }
+
+    /* ................ */
+    /* match container  */
+    .match-container {
+        flex-direction: column;
+    }
+    .tabs{
+        width: 100%;
+        margin-bottom: 2em;
+        flex-direction: row;
+        height: 80px;
+        background: none;
+        justify-content: space-between;
+    }
+    .tabs > button{
+        width: 32%;
+    }
+    .primary-btn:nth-child(1), .primary-btn:nth-child(2){
+        background: white;
+        color: #161616;
+        border: 1px solid #161616;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .card{
+        width: 48%;
+    }
+    .card:nth-child(7),
+    .card:nth-child(8),
+    .card:nth-child(9){
+        display: none;
+    }
+    .card-image {
+        width: 100%;
+        height: 210px;
+    }
+    .card-primary_text {
+        font-size: 20px;
+    }
+    .card-secondary_text {
+        font-size: 18px;
+    }
+    .tablet{
+        display: block;
+    }
+    /* ...................  */
+}
+
+/* end tablet query  */
+
+/* for mobile  */
+@media screen and (max-width: 477px) {
+    .container {
+        width: 90%;
+    }
+
+    /* for hero section responsiveness  */
+    .hero {
+        height: 472px;
+        flex-direction: column;
+    }
+
+    .hero-text {
+        width: 100%;
+        height: 40%;
+        padding: 0 3.5em;
+        text-align: center;
+    }
+
+    .hero-banner {
+        width: 90%;
+    }
+
+    .hero-banner>img {
+        width: 70%;
+        margin: 0 20%;
+        padding-top: 4em;
+    }
+
+    .primary-text {
+        padding-top: 3em;
+        font-size: 1.185em;
+        line-height: 1.2em;
+    }
+
+    .secondary-text {
+        display: none;
+        font-size: 0.375em;
+    }
+
+    .secondary-text_tm {
+        display: block;
+        font-size: 0.875em;
+    }
+
+    .hero-btn {
+        height: 40px;
+        width: 150px;
+        font-size: 0.9em;
+        margin: 0 auto;
+    }
+
+    /* ................... */
+
+     /* match container  */
+     .match-section {
+        margin: 2em 0;
+    }
+     .match-container {
+        flex-direction: column;
+    }
+    .tabs{
+        width: 100%;
+        margin-bottom: 2em;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1.5em 0;
+        background: none;
+    }
+    .tabs > button{
+        width: 90%;
+    }
+    .primary-btn:nth-child(1), .primary-btn:nth-child(2){
+        background: aliceblue;
+        color: #161616;
+        border: 1px solid #161616;
+    }
+    .card-container{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+    .card-image {
+        width: 100%;
+        height: 210px;
+    }
+    .card-secondary_text {
+        font-size: 18px;
+    }
+    /* ...................  */
+
+
+}
+
+
+
+/* ...............  */
